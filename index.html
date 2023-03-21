@@ -5,13 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./source/style/main.css">
     <title>Weather API</title>
 </head>
 
 <body>
 
-    <h1>Hello World!</h1>
+
+    <main>
+        <h1>Weather API</h1>
+        <form id="myForm">
+            <input type="text" name="city" id="inputCity" placeholder="Enter your city here">
+        </form>
+        <section class="mainCard">
+            <h1 id="formCity"></h1>
+            <h2 id="formRegion"></h2>
+        </section>
+        <h3>Powerade By</h3>
+        <a href="https://www.weatherapi.com/" title="Free Weather API"><img
+                src='//cdn.weatherapi.com/v4/images/weatherapi_logo.png' alt="Weather data by WeatherAPI.com"
+                border="0"></a>
+    </main>
 
 </body>
+
+<script src="source/scripts/script.js"></script>
 
 </html>
