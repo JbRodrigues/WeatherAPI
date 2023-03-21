@@ -10,4 +10,4 @@ fetch(`https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclu
         console.error('Error:', error);
     });
 
-    console.log("teste")
+    
