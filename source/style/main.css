@@ -46,21 +46,41 @@ main {
     -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    margin: 1rem;
+    margin: .3rem;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     flex-direction: column;
 }
 
 #formCity{
-    margin: .5rem;
+    margin: 1rem;
     font-size: 24px;
 }
 
 #formRegion{
     margin: .5rem;
     font-size: 20px;
+}
+
+#formTemp{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 52px;
+}
+
+#formIcon{
+    margin: 1rem;
+}
+
+#formText{
+    margin: 1rem;
+}
+
+.footer{
+    margin-top: 1rem;
 }
 
 
