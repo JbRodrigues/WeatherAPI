@@ -73,6 +73,8 @@ main {
 
 #formIcon{
     margin: 1rem;
+    width: 100px;
+    height: 100px;
 }
 
 #formText{

@@ -7,27 +7,19 @@ let displayRegion = document.getElementById("formRegion");
 let displayTemp = document.getElementById("formTemp");
 let displayText = document.getElementById("formText");
 let displayIcon = document.getElementById("formIcon");
+let city = "Londrina"
 
 
-function textSubmit() {
-    // Add an event listener to the form to handle form submission
-    form.addEventListener("submit", (event) => {
-        // Prevent the default form submission behavior
-        event.preventDefault();
-
-        let city = inputedCity.value.toUpperCase();
-        console.log(city)
-        displayCity.innerHTML = city;
-    });
-    return city
-}
-
-function fetchFunction(city) {
+// Add an event listener to the form to handle form submission
+form.addEventListener("submit", (event) => {
+    // Prevent the default form submission behavior
+    event.preventDefault();
+    city = inputedCity.value;
+    console.log(inputedCity.value.toUpperCase())
 
     fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`)
         .then(response => response.json())
         .then(data => {
-
             let cityName = data.location.name
             let regionName = data.location.region
             let currentTemp = data.current.temp_c
@@ -43,9 +35,4 @@ function fetchFunction(city) {
         .catch(error => {
             console.error('Error:', error);
         });
-}
-
-textSubmit(fetchFunction())
-
-
-
+});
